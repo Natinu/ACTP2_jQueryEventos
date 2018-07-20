@@ -19,11 +19,18 @@ $( document ).ready(function() {
   			return false;
 	});
 
-	// 5. 
+	// 5. agregar img seleccionada
 	$("#image" ).change(function() {
 		$(".create__image").attr("src", "assets/images/squared/" + this.value);
 			return false;
 	});
+
+	//6. agregar autor seleccionado
+	$("#author" ).change(function() {
+		$(".create__select").attr("src", "assets/images/profiles/" + this.value);
+			return false;
+	});
+
   		
 
 
